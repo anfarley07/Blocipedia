@@ -17,7 +17,12 @@ source 'https://rubygems.org'
    # Use sqlite3 as the development database for Active Record
    gem 'sqlite3'
    gem 'web-console', '~> 2.0'
+   gem 'listen', '~>3.0.5'
+   gem 'rspec-rails', '~> 3.0'
+   gem 'rails-controller-testing'
+   gem 'factory_girl_rails', '~> 4.0'
  end
+
 
  # Use Puma as the app server
  gem 'puma', '~> 3.0'
@@ -35,9 +40,8 @@ source 'https://rubygems.org'
 
  gem 'thor', '0.20.0'
 
+ # devise is a gem that manages user authentication
  gem 'devise'
 
-
- group :development do
-   gem 'listen', '~> 3.0.5'
- end
+ # uses bootstrap for css/styling
+ gem 'bootstrap-sass'
